@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <title>Harveyaya</title>
+    <link rel="stylesheet" href="{% static 'css/external_master.css' %}">
+</head>
+<body>
+    <a href="{% url 'external_homepage' %}">
+        <video width="100%" controls="true" autoplay loop>
+        <!--<video width="100%" autoplay loop>-->
+          <!--<source src="{% static 'video/Entering_Video.mp4' %}" type="video/mp4">-->
+          <source src="{% static 'video/compressed.mp4' %}" type="video/mp4">
+        </video>
+    </a>
+</body>
+</html>

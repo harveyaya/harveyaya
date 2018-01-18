@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <Title>Harveyaya</Title>
+
+    <link rel="stylesheet" href="{% static 'css/external_master.css' %}">
+    <!--<link rel="shortcut icon" href="#" />-->
+    <link rel="icon" href="{% static 'res/Harvey_favicon.jpg' %}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{% static 'js/external_master.js' %}"></script>
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div class="web-header">
+        <img src="{% static 'res/Harvey_icon_edition1_black.png' %}" style="margin-left: 1%;">
+        <img src="{% static 'res/Harvey_text_edition1_black.png' %}">
+        <div class="menu-bar">
+            <div class="menu-tab"><a>Know Me</a><span></span><div class="arrow-up"></div></div>
+            <div class="menu-tab"><a>Photos</a><span></span><div class="arrow-up"></div></div>
+        </div>
+    </div>
+    <div class="web-body">
+        {% block body %}{% endblock %}
+    </div>
+    <div class="web-footer">
+        <div class="all-rights-reserved">
+        © 2017, Harvey (Yu Hou). All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
