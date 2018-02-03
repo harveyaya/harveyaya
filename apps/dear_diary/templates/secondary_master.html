@@ -1,0 +1,14 @@
+{% extends 'external_master.html' %}
+
+<html lang="en">
+{% block head %}
+    <meta charset="UTF-8">
+{% endblock %}
+{% block body %}
+    <div class="breadcrumb-container">
+        <ol class="breadcrum" style="margin: 0"><li temp="{{ breadcrumb }}">{{ breadcrumb.pageName }}</li></ol>
+    </div>
+{% block body2 %}{% endblock %}
+{% endblock %}
+</body>
+</html>

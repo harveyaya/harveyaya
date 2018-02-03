@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'external',
+    'apps',
+    'apps.dear_diary',
 ]
 
 MIDDLEWARE_CLASSES = [

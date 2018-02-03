@@ -10,6 +10,7 @@ body{
     height: 6vh;
     overflow: hidden;
     position: relative;
+    background-color: #33b6f7;
 }
 
 .web-header img{
