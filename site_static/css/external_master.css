@@ -53,6 +53,16 @@ body{
     border-bottom: 7px solid black;
 }
 
+.web-header .dropdown-content {
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+
+.web-header .dropdown-content a{
+    text-decoration: none;
+}
+
 .web-body{
     height: 89vh;
 }

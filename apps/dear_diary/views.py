@@ -5,8 +5,7 @@ from django.views.generic import View
 
 class diaryHomeView(View):
     template_name = "diary_home.html"
-    breadcrumb = {"pageName": "Dear Diary", "pageURL": 'dear_diary'}
     def get(self, request):
-        context = {"breadcrumb": self.breadcrumb}
+        context = {}
         print(context)
         return render(request, self.template_name, context)

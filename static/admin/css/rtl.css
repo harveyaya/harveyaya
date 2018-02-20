@@ -64,10 +64,6 @@ tfoot td:first-child {
     text-align: left;
 }
 
-div.breadcrumbs {
-    text-align: right;
-}
-
 #content-main {
     float: right;
 }
