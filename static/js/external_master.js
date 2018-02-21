@@ -9,4 +9,10 @@ $(document).ready(function() {
         $(this).find(".menu-tab-title").css("color","black");
         $(this).find(".arrow-up").hide();
     })
+    $(".dropdown-content a").mouseenter(function(){
+        $(this).css("color", "orange");
+    })
+    $(".dropdown-content a").mouseleave(function(){
+        $(this).css("color", "white");
+    })
 });
