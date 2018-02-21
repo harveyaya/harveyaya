@@ -55,12 +55,20 @@ body{
 
 .web-header .dropdown-content {
     display: none;
+    margin-left: -15px;
     position: fixed;
     z-index: 1;
+    margin-top: 7px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 3px 0;
 }
 
 .web-header .dropdown-content a{
     text-decoration: none;
+    color: white;
+    padding: 3px 15px;
+
 }
 
 .web-body{
