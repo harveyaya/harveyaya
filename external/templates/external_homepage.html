@@ -1,21 +1,21 @@
 {% extends 'external_master.html' %}
 {% load static %}
-{% block head %}
+{% block header_block %}
     <link rel="stylesheet" href="{% static 'css/external_homepage.css' %}">
     <script type="text/javascript" src="{% static 'js/external_homepage.js' %}"></script>
 {% endblock %}
 {% block body %}
     {% for i in 'abcd' %}
         <div id="{{ i }}" class="body-screen">
-            {% if i = 'a' %}
+            {% if i == 'a' %}
                 <img class="unselectedImg" src="{% static 'res/External_body_screen_1.jpg' %}" style="display: show;">
                 <img class="selectedImg" src="{% static 'res/External_homepage_diary.jpg' %}" style="display: none;">
             <a href = "/dear_diary/"><p class="body-screen-title">Dear Diary</p></a>
-            {% elif i = 'b' %}
+            {% elif i == 'b' %}
                 <img class="unselectedImg" src="{% static 'res/External_body_screen_2.jpg' %}" style="display: show;">
                 <img class="selectedImg" src="{% static 'res/External_homepage_notes.jpg' %}" style="display: none;">
                 <p class="body-screen-title">Note Gallery</p>
-            {% elif i = 'c' %}
+            {% elif i == 'c' %}
                 <img class="unselectedImg" src="{% static 'res/External_body_screen_3.jpg' %}" style="display: show;">
                 <img class="selectedImg" src="{% static 'res/External_homepage_schedule.jpg' %}" style="display: none;">
                 <p class="body-screen-title">Making Schedule</p>

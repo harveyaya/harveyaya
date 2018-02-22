@@ -1,0 +1,8 @@
+.diary-content {
+    height: 100%;
+    background-image: url('/static/res/diary_paper.jpg');
+    /*background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-size: 100% 100%;
+}
