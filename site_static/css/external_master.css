@@ -61,13 +61,13 @@ body{
     margin-top: 7px;
     background-color: black;
     border-radius: 5px;
-    padding: 5px 0;
+    padding: 7px 0;
 }
 
 .web-header .dropdown-content a{
     text-decoration: none;
     color: white;
-    padding: 5px 15px;
+    padding: 7px 15px;
 
 }
 

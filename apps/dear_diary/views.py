@@ -7,5 +7,4 @@ class diaryHomeView(View):
     template_name = "diary_home.html"
     def get(self, request):
         context = {}
-        print(context)
         return render(request, self.template_name, context)

@@ -6,13 +6,12 @@
     <Title>Harveyaya</Title>
 
     <link rel="stylesheet" href="{% static 'css/external_master.css' %}">
-    <!--<link rel="shortcut icon" href="#" />-->
     <link rel="icon" href="{% static 'res/Harvey_favicon.jpg' %}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="{% static 'js/external_master.js' %}"></script>
 
-    {% block head %}{% endblock %}
+    {% block header_block %}{% endblock %}
 </head>
 <body>
     <div class="web-header">
@@ -22,15 +21,16 @@
             <div class="menu-tab"><a class="menu-tab-title">Know Me</a><span></span><div class="arrow-up"></div>
                 <div class="dropdown-content">
                     <a href="{% url 'resume' %}">Resume</a>
-                    <a href="https://www.linkedin.com/in/yu-hou/">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/yu-hou/">LinkedIn</a>
                     <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.instagram.com/harveyayaa/?hl=en">Instagram</a>
                 </div>
             </div>
             <div class="menu-tab"><a class="menu-tab-title">Photos</a><span></span><div class="arrow-up"></div></div>
         </div>
     </div>
     <div class="web-body">
-        {% block body %}{% endblock %}
+        {% block body_block %}{% endblock %}
     </div>
     <div class="web-footer">
         <div class="all-rights-reserved">
